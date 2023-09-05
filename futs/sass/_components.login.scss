@@ -1,0 +1,18 @@
+.login__container{
+  width:380px;
+  padding:3.125em 1.785714285714%; /*50/16*/ /*30/1680*/
+  margin:1.875em auto 0px; /*30/16*/
+  text-align:center;
+  border-radius: 8px;
+  border:1px solid $color-border-light;
+  box-shadow: 1px 1px 1px rgba(1,1,1,0.1);
+}
+
+
+@media (max-width:400px) {
+
+  .login__container{
+    width:90%;
+  }
+
+}

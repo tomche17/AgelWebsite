@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+
+	&:hover{
+
+	}
+
+}
+
+.footer__link, .text__link{
+  color: #E65252;
+  @include transition_css(all,0.3s,ease,0s);
+
+  &:hover{
+    color:darken(#E65252,25%);
+  }
+}

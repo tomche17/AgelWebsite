@@ -1,0 +1,28 @@
+.recap__part{
+  &+&{
+    margin-top:5em; /*80/16*/
+  }
+}
+
+
+.recap__inventaire{
+  &+&{
+    margin-top:1.25em; /*20/16*/
+  }
+}
+
+.element__nom{
+  font-weight: 700;
+  margin-right:10px;
+}
+
+.recap__total{
+  font-weight: 700;
+  margin-top:1.875em; /*30/16*/
+  text-transform: uppercase;
+}
+
+
+.recap__matos{
+  margin-top:1em;
+}

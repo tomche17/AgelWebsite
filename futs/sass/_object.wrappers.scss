@@ -1,0 +1,41 @@
+.wrapper{
+  width:1200px;
+  margin:0px auto;
+
+  &.commande__form{
+    width: 800px;
+  }
+}
+
+
+.wrapper--forms{
+  width: 55%;
+  float:left;
+}
+
+
+.wrapper--admin{
+  width:90%;
+  margin:0px auto;
+}
+
+
+
+@media (max-width:1250px) {
+  .wrapper{
+    width: 90%;
+  }
+}
+
+@media (max-width:1000px) {
+  .wrapper--forms{
+    width: 100%;
+    float:none;
+  }
+
+  .wrapper{
+    &.commande__form{
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,187 @@
+.form__label{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.875em; /*14/16*/
+  letter-spacing: 0.5px;
+  color:$color-grey-label;
+  width:50%;
+  float:left;
+}
+
+.form__part{
+  margin-bottom: 5em; /*80/16*/
+}
+
+.form__section{
+  &+&{
+    margin-top: 1.25em; /*20/16*/
+  }
+}
+
+.select__wrapper{
+  position: relative;
+  &:after{
+    content:"";
+    background: blue;
+    width:25px;
+    height: 12px;
+    position: absolute;
+    display: block;
+    right:0px;
+    top:6px;
+    @include background_size("../img/arrow.png",no-repeat,center,center,contain);
+  }
+}
+
+.form__select{
+  border:none;
+  background: none;
+  padding:0px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+}
+
+.input--classic{
+  width:50%;
+  border-bottom:1px solid $color-border-light;
+  padding:0px 0px 0.4375em; /*7/16*/
+
+  @include transition_css(all,0.3s,ease-in-out,0s);
+
+  &:focus{
+    border-bottom:1px solid #E65252;
+  }
+
+}
+
+
+.fut__label, .fut__prix, .prix__multiplicateur{
+    float:left;
+}
+.fut__label{
+
+  width:50%;
+}
+.fut__input{
+  width:40px;
+  text-align: center;
+}
+.fut__prix{
+  width:70px;
+  text-align: right;
+}
+
+.prix__multiplicateur, .fut__prix{
+    color:#A3A3A3;
+}
+
+.prix__multiplicateur{
+  margin:0px 40px 0px 3.333333333333%; /*40/1200*/
+}
+
+
+.form__futs{
+  &+&{
+    margin-top:0.625em; /*10/16*/
+  }
+}
+
+.futs__total{
+  margin-top:2.5em; /*40/16*/
+  padding-top:0.9375em; /*15/16*/
+  border-top:1px solid $color-border-light;
+  width:600px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.total__number{
+  margin-left:3%; /*40/1200*/
+}
+
+.form__submit{
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border:none;
+  color:white;
+  background: #E65252;
+  padding:0.9375em 1.25em; /*15/16 20/16*/
+  border-radius: 8px;
+    font-size:0.9em;
+
+  @include transition_css(all,0.3s,ease-in-out,0s);
+
+  &:hover{
+    background: darken(#E65252,15%);
+  }
+}
+
+.input--login{
+  width:90%;
+  text-align: left;
+  border:1px solid $color-border-light;
+  padding:0.75em 1.25em; /*12/16 20/16*/
+  margin-bottom:1.875em; /*30/16*/
+}
+
+.form--new-event{
+  position:absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip: rect(1px 1px 1px 1px);
+  width:1px;
+  height: 1px;
+}
+
+.form--new-event.show{
+  position: static;
+  overflow: auto;
+  clip: auto;
+  width: auto;
+  height: auto;
+}
+
+
+.bouton--no-user{
+  display: block;
+  margin-top:2em;
+
+  &:hover{
+    color:#E65252;
+  }
+}
+
+@media (max-width:1000px) {
+  .form__label{
+    width:100%;
+    float:none;
+  }
+  .input--classic{
+    float: none;
+    width:100%;
+
+  }
+
+  .fut__input{
+    width:40px;
+    text-align: center;
+  }
+  .fut__label{
+    float: none;
+    width:100%;
+  }
+
+  .fut__prix{
+    width: auto;
+  }
+
+  .prix__multiplicateur{
+    margin:0px 2%;
+  }
+
+  .futs__total{
+    width: 100%;
+  }
+
+}

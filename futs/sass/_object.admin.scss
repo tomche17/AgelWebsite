@@ -1,0 +1,108 @@
+.admin__table{
+  width:75%;
+
+  &+.table__subtitle{
+    margin-top:3em;
+  }
+}
+
+thead{
+border-bottom:1px solid $color-border-light;
+}
+
+th{
+  color:$color-grey-text;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+thead:after {
+    content: "-";
+    display: block;
+    line-height: make_em(10,18);
+    color: transparent;
+}
+
+td{
+    padding-top:make_em(10,18);
+    padding-bottom:make_em(10,18);
+    text-transform: capitalize;
+}
+
+tr{
+  &+&{
+    border-top: 1px solid $color-border-light;
+  }
+}
+
+.td--actions{
+  font-size: make_em(22,18);
+}
+
+.table__link{
+  color:$color-red;
+  background: none;
+  border: none;
+
+  &+&{
+    margin-left:make_em(10,22);
+  }
+}
+
+
+.table__form{
+  display: inline;
+}
+
+.bouton--admin{
+  font-size:0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border:none;
+  color:white;
+  background: #E65252;
+  padding:0.8em 1.2em; /*15/16 20/16*/
+  border-radius: 6px;
+
+  &+.admin__table{
+    margin-top:2em;
+  }
+
+  @include transition_css(all,0.3s,ease-in-out,0s);
+
+  &:hover{
+    background: darken(#E65252,15%);
+  }
+}
+
+
+.paragraphe--nodatas{
+  margin-bottom:2em;
+}
+
+@media (max-width:1000px) {
+  .admin__table{
+    width:100%;
+  }
+
+}
+
+
+@media (max-width:800px) {
+  .admin__table{
+    font-size: 0.9em;
+  }
+
+}
+
+@media (max-width:550px) {
+  .admin__table{
+    font-size: 0.8em;
+  }
+
+  .responsive__hide{
+    display: none;
+  }
+
+}

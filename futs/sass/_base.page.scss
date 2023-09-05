@@ -1,0 +1,41 @@
+html{
+
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+html,body {
+}
+
+
+footer{
+	text-align: center;
+	border-top: 1px solid $color-border-light;
+	margin-top:6.25em;/*100/16*/
+	padding:1.5625em 0px; /*25/16*/
+}
+
+.commande__error{
+	color:red;
+	margin-bottom:1.25em; /*20/16*/
+}
+
+.error--bordered{
+	border:1px solid red;
+	background:rgba(red,0.1);
+	border-radius: 8px;
+	padding:0.9375em 1.25em; /*15/16 20/16*/
+}
+
+.alert__message{
+	margin-bottom:0.625em; /*10/16*/
+	font-weight: 700;
+}
+
+
+@media (max-width:800px) {
+  footer{
+		margin-top:4em;
+	}
+}
